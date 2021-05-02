@@ -9,3 +9,31 @@
    * 訓練資訊包含: 使用多少資料, epochs
 ## Dataset
 * [MSCOCO 2017](https://drive.google.com/drive/folders/1fN9Zl8yX4MjQY1ljAY2py_7l7-vkCMHu?usp=sharing)
+
+## Feature Map & Captions (pickle)
+
+* [link](https://drive.google.com/drive/folders/1V0qwaIfv6hYvhINFcsSLVRDcovdNX-BD?usp=sharing)
+
+### Load
+```python
+import pickle
+with open('output_500.pkl', 'rb') as fp:
+  data = pickle.load(fp)
+```
+
+### data
+```
+[
+    {
+        'filename': '000000415840.jpg',
+        'feature': NUMPY_ARRAY,
+        'captions': [
+            'A silver and red train traveling down a busy city street.',
+            'A grey train passes on a city street.',
+            'Electric rail cars move along a track between automobile traffic lanes. ',
+            'A silver and orange bus is on a city street.',
+            'The trolley for the San Francisco Zoo is on its tracks.'
+        ]
+    }
+]
+```
