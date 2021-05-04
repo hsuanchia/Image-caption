@@ -18,6 +18,11 @@
     * training data: 下方將val2017前25000筆資料處理好的資料
     * Encoder output shape: (None, 4096)
     * 適用Voc: 使用全部Val2017統計， 只取出現頻率超過10的詞彙
+  * [Model 3](https://drive.google.com/file/d/1EZSKYim10Fa-CJAEhrzE2Og3X1CiPhRg/view?usp=sharing)
+    * training data: 將 @snsd0805 給的train2017 5000 筆資料處理好的資料
+    * Encoder output shape: (None, 14, 14, 512)
+    * 適用Voc: 使用全部Train2017統計， 只取出現頻率超過5的詞彙
+    * training detail: 1000 epochs with earlystop(loss = 5) -> stop in 82 epochs, loss: 0.2355, sparse_categorical_accuracy: 0.7767
 * Soft attention
 ## Preprocess 好的資料
 * [將val2017前25000筆資料處理好的pkl](https://drive.google.com/file/d/1mwQO6DgW_KFJvKQMlQb4bZWoXmx_igoT/view?usp=sharing)
@@ -28,5 +33,6 @@
 ```
 [ 'input': [feature_map(none,14,14,512), labeled caption], 'output' : labeled ground truth]
 ```
+* [用 Train2017 的所有annotation統計出來的voc, 只取出現頻率超過5的詞彙](https://drive.google.com/file/d/1-4EFf00eOz5uuk5DtIWCz18lHwx1p-ar/view?usp=sharing)
 * [用 Val2017 的所有annotation統計出來的voc, 只取出現頻率超過10的詞彙](https://drive.google.com/file/d/1uIbj_PhQBxa7-YTwkwj7Wlr4TfeFCHeM/view?usp=sharing)
 * [用 Val2017 的所有annotation統計出來的voc](https://drive.google.com/file/d/1VcbEhK8XmsmtJy8gCtuqn70XF_7Z3HV4/view?usp=sharing)
