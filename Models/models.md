@@ -19,7 +19,7 @@
     * Encoder output shape: (None, 4096)
     * 適用Voc: 使用全部Val2017統計， 只取出現頻率超過10的詞彙
 * Soft attention
-## Preprecess 好的資料
+## Preprocess 好的資料
 * [將val2017前25000筆資料處理好的pkl](https://drive.google.com/file/d/1mwQO6DgW_KFJvKQMlQb4bZWoXmx_igoT/view?usp=sharing)
 ```
 [ 'input': [feature_map(none,4096), labeled caption], 'output' : labeled ground truth]
