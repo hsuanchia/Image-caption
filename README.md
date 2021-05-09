@@ -38,3 +38,6 @@ with open('output_500.pkl', 'rb') as fp:
     }
 ]
 ```
+## Architecture
+### Soft Attention![](https://i.imgur.com/aFu5aEa.jpg)
+### Seq2seq![](https://i.imgur.com/dKlAlH8.jpg)
