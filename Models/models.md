@@ -24,7 +24,7 @@
     * 適用Voc: 使用全部Train2017統計， 只取出現頻率超過5的詞彙
     * training detail: 1000 epochs with earlystop(loss = 5) -> stop in 82 epochs, loss: 0.2355, sparse_categorical_accuracy: 0.7767
   * [Model 4](https://drive.google.com/file/d/1MUSx669M3YRU6vDifyK_PYqaGu-4aQrL/view?usp=sharing)
-    * training data: [14*14*512 train2017](https://drive.google.com/file/d/1mX6YlBP0BTuW8LZm4-8G62UDgzB8Rr66/view?usp=sharing)
+    * training data: [14x14x512 train2017](https://drive.google.com/file/d/1mX6YlBP0BTuW8LZm4-8G62UDgzB8Rr66/view?usp=sharing)
     * Encoder output shape: (None, 14, 14, 512)
     * 適用Voc: 使用全部Train2017統計， 只取出現頻率超過5的詞彙
     * training detail: 100 epochs with earlystop(loss = 5) -> no stop, loss: 0.6586, sparse_categorical_accuracy: 0.6037
