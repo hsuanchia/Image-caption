@@ -39,6 +39,7 @@
 ```
 [ 'input': [feature_map(none,14,14,512), labeled caption], 'output' : labeled ground truth]
 ```
+* [用 Train2017 的所有annotation統計出來的voc, 只取出現頻率超過5的詞彙, 加上unk](https://drive.google.com/file/d/1Dht3wvrohwqFQziOl8SlPVr0xaLE_pTB/view?usp=sharing)
 * [用 Train2017 的所有annotation統計出來的voc, 只取出現頻率超過5的詞彙](https://drive.google.com/file/d/1-4EFf00eOz5uuk5DtIWCz18lHwx1p-ar/view?usp=sharing)
 * [用 Val2017 的所有annotation統計出來的voc, 只取出現頻率超過10的詞彙](https://drive.google.com/file/d/1uIbj_PhQBxa7-YTwkwj7Wlr4TfeFCHeM/view?usp=sharing)
 * [用 Val2017 的所有annotation統計出來的voc](https://drive.google.com/file/d/1VcbEhK8XmsmtJy8gCtuqn70XF_7Z3HV4/view?usp=sharing)
