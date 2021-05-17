@@ -22,13 +22,21 @@
     * training data: 將 @snsd0805 給的train2017 5000 筆資料處理好的資料
     * Encoder output shape: (None, 14, 14, 512)
     * 適用Voc: 使用全部Train2017統計， 只取出現頻率超過5的詞彙
-    * training detail: 1000 epochs with earlystop(loss = 5) -> stop in 82 epochs, loss: 0.2355, sparse_categorical_accuracy: 0.7767
+    * training detail: 1000 epochs with earlystop(loss = 5) -> stop at 82 epochs, loss: 0.2355, sparse_categorical_accuracy: 0.7767
   * [Model 4](https://drive.google.com/file/d/1MUSx669M3YRU6vDifyK_PYqaGu-4aQrL/view?usp=sharing)
     * training data: [14x14x512 train2017](https://drive.google.com/file/d/1mX6YlBP0BTuW8LZm4-8G62UDgzB8Rr66/view?usp=sharing)
     * Encoder output shape: (None, 14, 14, 512)
-    * 適用Voc: 使用全部Train2017統計， 只取出現頻率超過5的詞彙
+    * 適用Voc: 使用全部Train2017統計， 只取出現頻率超過5的詞彙, 加上unk
     * training detail: 100 epochs with earlystop(loss = 5) -> no stop, loss: 0.6586, sparse_categorical_accuracy: 0.6037
-    * 備註:有加入unknown token機制, 但有bug -> 每次預測的句尾比出現一個unk
+    * 備註1:有加入unknown token機制, 但有bug -> 每次預測的句尾比出現一個unk
+    * 備註2:word vector mapping 不到的給0向量，unknown token 用全部的vector取平均
+  * [Model 5](https://drive.google.com/file/d/1jWSlbKr32Tz2TyfpsZJnZA9h11XKnQZA/view?usp=sharing)
+    * training data: [14x14x512 train2017](https://drive.google.com/file/d/1mX6YlBP0BTuW8LZm4-8G62UDgzB8Rr66/view?usp=sharing)
+    * Encoder output shape: (None, 14, 14, 512)
+    * 適用Voc: 使用全部Train2017統計， 只取出現頻率超過5的詞彙, 加上unk
+    * training detail: 100 epochs with earlystop(loss = 5) -> stop at 92 epochs, loss: 0.6820, sparse_categorical_accuracy: 0.5908
+    * 備註1:有加入unknown token機制, 但有bug -> 每次預測的句尾比出現一個unk
+    * 備註2:word vector mapping 不到的給隨機向量，unknown token 用全部的vector取平均
 * Soft attention
 ## Preprocess 好的資料
 * [將val2017前25000筆資料處理好的pkl](https://drive.google.com/file/d/1mwQO6DgW_KFJvKQMlQb4bZWoXmx_igoT/view?usp=sharing)
