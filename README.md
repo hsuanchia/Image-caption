@@ -41,4 +41,4 @@ with open('output_500.pkl', 'rb') as fp:
 ## Architecture
 ### Seq2seq![](https://i.imgur.com/dKlAlH8.jpg)
 ### Soft Attention![](https://i.imgur.com/aFu5aEa.jpg)
-### Show-and-tell with visual attention![](https://i.imgur.com/OHTI1U4.jpg)
+### Show-and-tell with visual attention(By 老師)![](https://i.imgur.com/OHTI1U4.jpg)
