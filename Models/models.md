@@ -60,6 +60,16 @@
     * 備註1:word vector mapping 不到的跟special token 都用 **隨機向量** 
     * 備註2:訓練時間為2小時左右
     * 備註3:有加上recurrent_dropout=0.35
+    * 備註4:validation 只用後1800，因為RAM又爆了QQ
+  * [Model 4](https://drive.google.com/file/d/1nYiN0pvxzSXg32PQwTrWaRuqItaCRsNJ/view?usp=sharing)
+    * training data: [14x14x512 train2017](https://drive.google.com/file/d/1mX6YlBP0BTuW8LZm4-8G62UDgzB8Rr66/view?usp=sharing)
+    * Encoder output shape: (None, 14, 14, 512)
+    * 適用Voc: 使用全部Train2017統計， 只取出現頻率超過5的詞彙, 加上unk
+    * training detail: 50 epochs with earlystop(val_loss = 5) -> No stop, loss: 1.2243 , val_loss: 1.3725
+    * 備註1:word vector mapping 不到的跟special token 都用 **隨機向量** 
+    * 備註2:訓練時間為5小時左右
+    * 備註3:有加上recurrent_dropout=0.35
+    * 備註4:validation 只用後1800，因為RAM又爆了QQ
 ## Preprocess 好的資料
 * [將val2017前25000筆資料處理好的pkl](https://drive.google.com/file/d/1mwQO6DgW_KFJvKQMlQb4bZWoXmx_igoT/view?usp=sharing)
 ```
