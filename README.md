@@ -42,3 +42,6 @@ with open('output_500.pkl', 'rb') as fp:
 ### Seq2seq![](https://i.imgur.com/dKlAlH8.jpg)
 ### Soft Attention![](https://i.imgur.com/aFu5aEa.jpg)
 ### Show-and-tell with visual attention (By 老師)![](https://i.imgur.com/OHTI1U4.jpg)
+## Demo
+<img width="853" height="476" alt="Img_cap_ex1" src="https://github.com/user-attachments/assets/2142cb15-0fdf-4097-b155-3d63e496092f" />
+
